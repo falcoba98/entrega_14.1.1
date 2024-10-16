@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de imágenes de la NASA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Buscador de imágenes de la NASA</h1>
+    </div>
+    <div class="container d-flex justify-content-center my-4">
+        <form id="search-form" class="d-flex flex-column align-items-center">
+            <input type="text" id="query" class="form-control mb-3" placeholder="Buscar...">
+            <button type="button" class="btn btn-primary" id="search-button">Buscar imágenes</button>
+        </form>
+    </div>
+        <div id="results" class="row mt-4 justify-content-center"></div>
+    <script src="script.js"></script>
+</body>
+</html>

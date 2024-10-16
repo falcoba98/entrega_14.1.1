@@ -1,0 +1,92 @@
+/* Ajustar ancho del cuadro de búsqueda y del botón */
+#search-form input[type="text"] {
+    width: 300px;
+    max-width: 100%;
+}
+
+#search-form button {
+    width: 150px;
+    max-width: 100%;
+    font-size: small;
+}
+
+/* Espacio entre el cuadro de búsqueda y el botón */
+#search-form .form-control {
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    margin: 10px; /* Espaciado entre tarjetas */
+    height: 350px; /* Altura fija para todas las tarjetas */
+    overflow: hidden; /* Ocultar el desbordamiento del texto */
+}
+
+.card img {
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+}
+
+
+
+#results .card {
+    min-width: 250px; /* Tamaño mínimo de las tarjetas */
+    max-width: 300px; /* Tamaño máximo de las tarjetas */
+    margin: 10px; /* Espacio entre tarjetas */
+    height: 400px; /* Altura fija para todas las tarjetas */
+}
+
+.card-title {
+    white-space: nowrap; /* Evitar el salto de línea en el título */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    text-overflow: ellipsis; /* Añadir puntos suspensivos */
+}
+
+.card-text {
+    height: 60%; /* Ajustar la altura del texto */
+    overflow-y: auto; /* Permitir el desplazamiento vertical */
+    text-overflow: ellipsis; /* Mostrar puntos suspensivos si hay desbordamiento */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limitar el número de líneas visibles */
+    line-clamp: 4; /* Propiedad estándar */
+    margin: 0; /* Quitar márgenes */
+    padding: 0; /* Quitar relleno */
+    scrollbar-width: thin; /* Estilo de barra de desplazamiento en Firefox */
+}
+
+/* Estilos de la barra de desplazamiento para navegadores WebKit (Chrome, Safari) */
+.card-text::-webkit-scrollbar {
+    width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+.card-text::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color de la barra de desplazamiento */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.card-text::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color al pasar el mouse */
+}
+
+input[type="text"] {
+    width: 200px; /* Ajustar el ancho del cuadro de búsqueda */
+    margin-bottom: 10px; /* Espaciado debajo del cuadro de búsqueda */
+}
+
+button {
+    margin-left: 10px; /* Espaciado a la izquierda del botón */
+}
+
+.card-body {
+    display: -webkit-box; /* Para navegadores que requieren prefijo */
+    display: box; /* Propiedad estándar */
+    -webkit-box-orient: vertical; /* Para navegadores que requieren prefijo */
+    box-orient: vertical; /* Propiedad estándar */
+    overflow: hidden;
+    -webkit-line-clamp: 4; /* Para navegadores que requieren prefijo */
+    line-clamp: 4; /* Propiedad estándar */
+}
